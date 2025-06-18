@@ -1,0 +1,263 @@
+/* style.css */
+
+/* Importación de fuentes (ya enlazadas en HTML) */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+header {
+    background-color: #ffffff;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px; /* Ajusta esto según el tamaño de tu logo */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #0056b3; /* Un azul corporativo */
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #003d80;
+}
+
+/* Botones */
+.btn-primary {
+    display: inline-block;
+    background-color: #007bff; /* Azul brillante */
+    color: white;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Secciones Generales */
+section {
+    padding: 80px 0;
+    text-align: center;
+}
+
+h1, h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: #2c3e50; /* Un gris oscuro para títulos */
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.8em;
+    line-height: 1.2;
+}
+
+h2 {
+    font-size: 2.2em;
+    margin-bottom: 40px;
+}
+
+p {
+    font-size: 1.1em;
+    color: #555;
+}
+
+/* Hero Section */
+.hero {
+    /* Asegúrate de que hero-background.jpg esté en la misma carpeta */
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('hero-background.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 100px 0;
+}
+
+.hero h1 {
+    color: white;
+}
+
+.hero p {
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 30px;
+    font-size: 1.2em;
+}
+
+/* Services Section */
+.services {
+    background-color: #f9f9f9;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.service-item {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+.service-item h3 {
+    color: #007bff;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.service-item p {
+    font-size: 1em;
+    color: #666;
+}
+
+/* Contact Section */
+.contact {
+    background-color: #e2eaf0; /* Un azul muy claro */
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 40px auto 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: left;
+}
+
+.contact input[type="text"],
+.contact input[type="email"],
+.contact textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    font-family: 'Roboto', sans-serif;
+}
+
+.contact textarea {
+    resize: vertical;
+}
+
+.contact .btn-primary {
+    align-self: center;
+    width: auto;
+    padding: 12px 40px;
+}
+
+.contact-info {
+    margin-top: 30px;
+    font-size: 1.1em;
+    color: #555;
+}
+
+.contact-info a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+/* Footer */
+footer {
+    background-color: #2c3e50; /* Gris oscuro para el footer */
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+footer .social-media a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+footer .social-media a:hover {
+    color: #007bff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .hero {
+        padding: 80px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo img {
+        height: 40px;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    .service-grid {
+        grid-template-columns: 1fr;
+    }
+}
