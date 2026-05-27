@@ -10,7 +10,17 @@
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
-<body>
+<script>
+
+const toggle = document.getElementById('menu-toggle');
+const nav = document.querySelector('nav');
+
+toggle.addEventListener('click', () => {
+nav.classList.toggle('active');
+});
+
+</script>
+  <body>
 
 <header>
 <div class="container navbar">
