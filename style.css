@@ -10,7 +10,8 @@ nav ul{display:flex;gap:30px;list-style:none;}
 nav ul li a{color:#1e293b;font-weight:600;}
 nav ul li a:hover{color:#2563eb;}
 .btn-top{background:#2563eb;color:#fff;padding:12px 22px;border-radius:40px;font-weight:600;}
-.hero{min-height:100vh;display:flex;align-items:center;padding-top:120px;background:linear-gradient(to right, rgba(255,255,255,0.95), rgba(255,255,255,0.75)), url('img/hero.jpg');background-size:cover;background-position:center;}
+.hero{min-height:850px;display:flex;align-items:center;padding-top:180px;padding-bottom:80px;;background:linear-gradient(to right, rgba(255,255,255,0.95), rgba(255,255,255,0.75)), url('img/hero.jpg');background-size:cover;background-position:center;}
+.hero-content{position:relative;z-index:2;}
 .hero-content{max-width:650px;}
 .hero-sub{color:#2563eb;font-weight:700;margin-bottom:20px;}
 .hero h1{font-size:4rem;line-height:1.1;margin-bottom:25px;font-weight:800;}
